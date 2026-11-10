@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Calculator | CodeAlpha</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="calculator">
+    <header class="top">
+      <div>
+        <p class="small-title">MY FRONTEND PROJECT</p>
+        <h1>Calculator</h1>
+      </div>
+      <span class="light" aria-label="Calculator is ready"></span>
+    </header>
+
+    <section class="screen" aria-live="polite">
+      <p id="previous">Ready when you are</p>
+      <output id="current" aria-label="Current value">0</output>
+    </section>
+
+    <section class="buttons" aria-label="Calculator keypad">
+      <button class="special" data-action="clear">AC</button>
+      <button class="special" data-action="backspace" aria-label="Delete last character">DEL</button>
+      <button class="special" data-action="percent">%</button>
+      <button class="operator" data-operator="/">÷</button>
+
+      <button data-number="7">7</button>
+      <button data-number="8">8</button>
+      <button data-number="9">9</button>
+      <button class="operator" data-operator="*">×</button>
+
+      <button data-number="4">4</button>
+      <button data-number="5">5</button>
+      <button data-number="6">6</button>
+      <button class="operator" data-operator="-">−</button>
+
+      <button data-number="1">1</button>
+      <button data-number="2">2</button>
+      <button data-number="3">3</button>
+      <button class="operator" data-operator="+">+</button>
+
+      <button class="special" data-action="sign">+/−</button>
+      <button data-number="0">0</button>
+      <button data-action="decimal">.</button>
+      <button class="equals" data-action="equals">=</button>
+    </section>
+
+    <p class="footer">Made with HTML, CSS and JavaScript</p>
+  </main>
+</body>
+</html>
